@@ -1,0 +1,476 @@
+/* ===============================
+   Faculty Header
+================================ */
+
+.faculty-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.faculty-header h1 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 6px;
+}
+
+.faculty-header p {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+.faculty-add-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 24px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(135deg, #6d28d9, #7c3aed);
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.faculty-add-btn:hover {
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 12px 25px rgba(124, 58, 237, .25);
+
+}
+
+/* ===============================
+   Top Cards
+================================ */
+
+.faculty-top-section {
+
+    display: grid;
+
+    grid-template-columns: 260px 1fr;
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+
+}
+
+.faculty-stat-card {
+
+    background: #fff;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .06);
+
+}
+
+.faculty-stat-card h4 {
+
+    color: #6b7280;
+
+    margin-bottom: 10px;
+
+}
+
+.faculty-stat-card h2 {
+
+    font-size: 40px;
+
+    color: #6d28d9;
+
+}
+
+.faculty-search-card {
+
+    background: #fff;
+
+    border-radius: 18px;
+
+    padding: 18px 24px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .06);
+
+    width: 500px;
+    /* Change width here */
+    margin-bottom: 30px;
+    /* Gap below search box */
+
+}
+
+.faculty-search-card input {
+
+    border: none;
+
+    outline: none;
+
+    width: 100%;
+
+    font-size: 15px;
+
+}
+
+.search-icon {
+
+    color: #7c3aed;
+
+    font-size: 20px;
+
+}
+
+/* ===============================
+   Faculty Table
+================================ */
+
+.faculty-table-card {
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .06);
+
+    overflow: hidden;
+
+    margin-top: 25px;
+    /* Adds space above the table */
+
+}
+
+.faculty-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+.faculty-table thead {
+
+    background: #f8fafc;
+
+}
+
+.faculty-table th {
+
+    padding: 18px 22px;
+
+    text-align: left;
+
+    color: #475569;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+}
+
+.faculty-table td {
+
+    padding: 18px 22px;
+
+    border-top: 1px solid #edf2f7;
+
+    vertical-align: middle;
+
+}
+
+.faculty-table tbody tr {
+
+    transition: .25s;
+
+}
+
+.faculty-table tbody tr:hover {
+
+    background: #f8fafc;
+
+}
+
+.faculty-name {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+}
+
+.faculty-avatar {
+
+    width: 45px;
+
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(135deg, #6d28d9, #7c3aed);
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: bold;
+
+    font-size: 18px;
+
+}
+
+.faculty-actions {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+
+}
+
+.faculty-actions .view-btn,
+.faculty-actions .edit-btn,
+.faculty-actions .delete-btn {
+
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.08);
+
+}
+
+.faculty-actions .view-btn {
+
+    background: #7c3aed;
+
+}
+
+.faculty-actions .edit-btn {
+
+    background: #2563eb;
+
+}
+
+.faculty-actions .delete-btn {
+
+    background: #ef4444;
+
+}
+
+.faculty-actions .view-btn:hover,
+.faculty-actions .edit-btn:hover,
+.faculty-actions .delete-btn:hover {
+
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(15, 23, 42, 0.12);
+
+}
+
+.status-active {
+
+    background: #dcfce7;
+
+    color: #15803d;
+
+    padding: 7px 14px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+.status-inactive {
+
+    background: #fee2e2;
+
+    color: #dc2626;
+
+    padding: 7px 14px;
+
+    border-radius: 30px;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+.table-message {
+
+    text-align: center;
+
+    padding: 50px;
+
+    color: #64748b;
+
+}
+
+
+/* ===================================
+   Summary Cards
+=================================== */
+
+.faculty-top-section {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+
+}
+
+.faculty-stat-card {
+
+    background: #fff;
+
+    padding: 28px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .06);
+
+    transition: .3s;
+
+}
+
+.faculty-stat-card:hover {
+
+    transform: translateY(-4px);
+
+}
+
+.faculty-stat-card h4 {
+
+    color: #64748b;
+
+    margin-bottom: 10px;
+
+}
+
+.faculty-stat-card h2 {
+
+    font-size: 38px;
+
+    color: #6d28d9;
+
+}
+
+/* ===================================
+   Empty State
+=================================== */
+
+.empty-state {
+
+    padding: 60px 20px;
+
+    text-align: center;
+
+}
+
+.empty-icon {
+
+    font-size: 60px;
+
+    margin-bottom: 15px;
+
+}
+
+.empty-state h3 {
+
+    margin-bottom: 10px;
+
+    color: #111827;
+
+}
+
+.empty-state p {
+
+    color: #64748b;
+
+}
+
+/* ===================================
+   Responsive
+=================================== */
+
+@media(max-width:992px) {
+
+    .faculty-top-section {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .faculty-table-card {
+
+        overflow-x: auto;
+
+    }
+
+    .faculty-table {
+
+        min-width: 900px;
+
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .faculty-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+    }
+
+    .faculty-add-btn {
+
+        width: 100%;
+
+        justify-content: center;
+
+    }
+
+}

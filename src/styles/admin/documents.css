@@ -1,0 +1,177 @@
+.documents-page {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+}
+
+.documents-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.documents-header h1 {
+
+    font-size: 30px;
+
+    color: #1e293b;
+
+}
+
+.documents-header p {
+
+    margin-top: 8px;
+
+    color: #64748b;
+
+}
+
+.documents-table-card {
+
+    background: #fff;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+
+    min-height: 500px;
+
+}
+
+.document-actions {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: nowrap;
+
+}
+
+.document-actions .view-btn,
+.document-actions .download-btn,
+.document-actions .delete-btn {
+
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.08);
+
+}
+
+.document-actions .view-btn {
+
+    background: #7c3aed;
+
+}
+
+.document-actions .download-btn {
+
+    background: #10b981;
+
+}
+
+.document-actions .delete-btn {
+
+    background: #ef4444;
+
+}
+
+.document-actions .view-btn:hover,
+.document-actions .download-btn:hover,
+.document-actions .delete-btn:hover {
+
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(15, 23, 42, 0.12);
+
+}
+
+
+.document-stats {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+
+}
+
+.document-stat-card {
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 6px 18px rgba(0, 0, 0, .08);
+
+}
+
+.document-stat-card h4 {
+
+    color: #64748b;
+
+    margin-bottom: 10px;
+
+}
+
+.document-stat-card h2 {
+
+    font-size: 30px;
+
+    color: #6d28d9;
+
+}
+
+.document-filter-bar {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+
+}
+
+.document-filter-bar input,
+
+.document-filter-bar select {
+
+    padding: 12px 16px;
+
+    border-radius: 10px;
+
+    border: 1px solid #ddd;
+
+    font-size: 15px;
+
+}
+
+.document-filter-bar input {
+
+    flex: 1;
+
+}

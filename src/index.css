@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --font-system: -apple-system, 'SF Pro Text', 'SF Pro Display', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --color-text: #0b0b0b;
+    /* main black */
+    --color-muted: #6b7280;
+    /* sub gray */
+    --bg: #f7f8fb;
+    --surface: #ffffff;
+    --border: #e6e9ef;
+    --shadow: 0 8px 30px rgba(11, 11, 11, 0.06);
+    --radius: 14px;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--color-text);
+    font-family: var(--font-system);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button,
+input {
+    font: inherit;
+}
